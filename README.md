@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : SETHUKKARASI C
+Roll no : 212223230201
+Date of experiment : 19-08-2024
 
 
 
@@ -77,31 +77,101 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+### Addition  of 8 bit ALP 
+org 100h
 
+mov ax,0028h;
+mov bx,0011h;
+add ax,bx;
+ret
 
-
-## Output  
+### Output
+![add](/add.png)  
  
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+### Subtraction   of 8 bit numbers  ALP 
+org 100h
 
+mov ax,0028h;
+mov bx,0011h;
+sub ax,bx;
 
-## Division alp 
+ret
 
-## Output  
+### Output
+![sub](/sub.png)
 
+### Multiplication alp 
+org 100h
+
+mov ax,0028h;
+mov bx,0011h;
+mul bx;
+
+ret
+
+### Output  
+![mul](/mul.png)
+
+### Division alp 
+org 100h
+
+mov ax,0028h;
+mov bx,0011h;
+div bx;
+
+ret
+
+### Output
+![div](/div.png)  
+
+## Programs for logical operations
+
+### AND operation
+org 100h
+
+mov ax,0028h;
+mov bx,0011h;
+and ax,bx;
+
+ret
+
+### Output
+![and](/and.png)
+
+### OR operation
+org 100h
+
+mov ax,0028h;
+mov bx,0e11h;
+or ax,bx;
+
+ret
+
+### Output
+![or](/or.png)
+
+### XOR operation
+org 100h
+
+mov ax,0028h;
+mov bx,0e11h;
+xor ax,bx;
+
+ret
+
+### Output
+![xor](/xor.png)
+
+### NOT operation
+org 100h
+
+mov ax,0e11h;
+not ax;
+
+ret
+
+### Output
+![not](/not.png)
 
 ## Result :
- 
-
-
-
-
-
-
-
-
+ Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
